@@ -35,9 +35,7 @@ app.get("/login", function(req, res){
 
 app.post("/register",function(req, res){
     
-    console.log(req.body.username);
-    console.log(req.body.password);
-
+   
     const newUser = new User({
         email: req.body.username,
         password: req.body.password
